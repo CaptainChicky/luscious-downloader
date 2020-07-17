@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Luscious Downloader by Lucas8x</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Luscious Downloader</h1>
+      <h2 class="project-tagline">Download Luscious Albums</h2>
+      <a href="https://github.com/Lucas8x/luscious-downloader" class="btn">View on GitHub</a>
+      <a href="https://github.com/Lucas8x/luscious-downloader/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Lucas8x/luscious-downloader/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="luscious-downloader" class="anchor" href="#luscious-downloader" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Luscious Downloader</h1>
+<p>CLI tool for downloading Luscious Albums</p>
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+<ul>
+<li>Python 3</li>
+<li>requests</li>
+</ul>
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+<p><em>If you have python and git installed.</em></p>
+<pre><code>git clone https://github.com/Lucas8x/luscious-downloader.git
+cd luscious-downloader
+python setup.py install
+</code></pre>
+<p><em>or through pip.</em></p>
+<pre><code>pip install luscious-downloader
+</code></pre>
+<h2>
+<a id="installation-2-windows-only" class="anchor" href="#installation-2-windows-only" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation #2 (Windows Only)</h2>
+<p><em>If you don't have python installed.</em></p>
+<ol>
+<li>
+<a href="https://github.com/Lucas8x/luscious-downloader/archive/master.zip">Download</a>.</li>
+<li>Extract.</li>
+<li>Run <code>run.bat</code>.</li>
+<li>Wait install.</li>
+</ol>
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+<p><strong>NOTE:</strong> The default download folder will be the path where you are executing the command.<br>
+<strong>NOTE²:</strong> You can enter multiple url and ids separated by commas.</p>
+<p>Download albums:</p>
+<pre><code>lsd -a https://members.luscious.net/albums/light-yuri_275719/
+lsd -a 275719,292887
+</code></pre>
+<p>Download all user's albums:</p>
+<pre><code>lsd -u https://members.luscious.net/users/668124/
+lsd -u 668124,274991
+</code></pre>
+<pre><code>Options:
+  -h, --help            show help message
+# Download
+  -a ALBUM_INPUTS, --album ALBUM_INPUTS
+                        download album by url or id
+  -u USER_INPUTS, --user USER_INPUTS
+                        download all user albums by url or id
+  -s KEYWORD, --search KEYWORD
+                        search albums by keyword
+# Search Options
+  --download, -d        download albums from search results
+  --page PAGE           page numebr of search results
+  --max-page MAX_PAGES  max pages of search results
+
+# Download Options
+  --output DIRECTORY, -o DIRECTORY
+                        output directory
+  --threads THREADS, -t THREADS
+                        how many download threads
+  --retries RETRIES, -R RETRIES
+                        download retries
+  --timeout TIMEOUT, -T TIMEOUT
+                        download timeout
+  --delay DELAY, -D DELAY
+                        delay between downloading multiple albums
+</code></pre>
+<h2>
+<a id="menu" class="anchor" href="#menu" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Menu</h2>
+<ol>
+<li>Enter albums URL or ID.</li>
+<li>Download all user albums.</li>
+<li>Download from list.txt.</li>
+<li>
+<a href="#settings">Settings</a>.</li>
+<li>Exit.</li>
+</ol>
+<h3>
+<a id="settings" class="anchor" href="#settings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Settings</h3>
+<ol>
+<li>Change Directory (Change albums download directory).</li>
+<li>CPU Pool (Default = Your CPU Count).</li>
+<li>Picture Retries (download attempts for each picture).</li>
+<li>Picture Timeout (download timeout for each picture).</li>
+<li>Download Delay (delay between downloading multiple albums)</li>
+<li>Back.</li>
+</ol>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Lucas8x/luscious-downloader">Luscious Downloader</a> is maintained by <a href="https://github.com/Lucas8x">Lucas8x</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
